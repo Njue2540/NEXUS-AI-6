@@ -13,7 +13,7 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined
     ? databasePath
     : process.env.DATABASE_URL;
 module.exports = { session: process.env.SESSION_ID || '',
-    PREFIXE: process.env.PREFIX || ".",
+    PREFIXE: process.env.PREFIX || ",",
     OWNER_NAME: process.env.OWNER_NAME || "254710772666",
     NUMERO_OWNER : process.env.NUMERO_OWNER || " Ibrahim Adams",              
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
@@ -30,11 +30,11 @@ module.exports = { session: process.env.SESSION_ID || '',
     DP : process.env.STARTING_BOT_MESSAGE || "yes",
     ANTIDELETE1 : process.env.ANTI_DELETE_MESSAGE || 'no',
     ANTICALL : process.env.ANTICALL || 'no',
-                  AUTO_REACT_STATUS : process.env.AUTO_REACT_STATUS || 'yes',
-                  AUTO_READ : process.env.AUTO_READ || 'yes',
+                  AUTO_REACT_STATUS : process.env.AUTO_REACT_STATUS || 'no',
+                  AUTO_READ : process.env.AUTO_READ || 'no',
                   CHATBOT : process.env.CHATBOT || "yes",
                   AUTO_BIO : process.env.AUTO_BIO || "yes",
-                  AUTO_REACT : process.env.AUTO_REACT || "yes",
+                  AUTO_REACT : process.env.AUTO_REACT || "no",
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
